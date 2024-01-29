@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+main {
+    margin: 0.5% 10% 0.5% 10%;
+    padding: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    background-color: rgb(236, 236, 236);
+
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 5vh;
+}
+
+.curriculo_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculo_skills_conteudo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 4vh;
+}
+
+.mid {
+    display: flex;
+    gap: 10vh;
+}
+
+.curriculo_cursos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.curriculo_experiencias {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.curriculo_formacao {
+    max-width: 49.8%;
+}

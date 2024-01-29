@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a href="index.html" class="cabecalho_menu_link">Home</a>
+            <a href="about.html" class="cabecalho_menu_link">Sobre Mim</a>
+            <a href="curriculo.html" class="cabecalho_menu_link">Currículo</a>
+        </nav>
     </header>
 
-    <main>
+    <main class="apresentacao">
 
-        <h1>Eleve seu negócio digital a outro nível <strong class="destaqueTitulo">com um Front-end de qualidade!</strong></h1>
+        <section class="apresentacao_conteudo">
+            <h1 class="apresentacao_conteudo_titulo">Eleve seu negócio digital a outro nível <strong class="destaqueTitulo">com um Front-end de qualidade!</strong></h1>
 
-        <p>Olá! Sou Kauã Almeida, desenvolvedor FullStack com especialidade em Java, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <p class="apresentacao_conteudo_texto">Olá! Sou Kauã Almeida, desenvolvedor FullStack com especialidade em Java, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
 
-        <a href="https://www.linkedin.com/in/kaua-silveira2004/">Linkedin</a>
+            <div class="apresentacao_links">
 
-        <a href="https://github.com/KauaAlmeidaSilveira">Github</a>
+                <h2 class="apresentacao_links_subtitulo">Acesse minhas redes: </h2>
 
-        <img src="fotoKaua.jpg" alt="Minha foto">
+                <a class="apresentacao_links_link" href="https://github.com/KauaAlmeidaSilveira">
+                    <img src="./assets/github.png" alt="Icon Github">
+                    Github</a>
+                <a class="apresentacao_links_link" href="https://www.linkedin.com/in/kaua-silveira2004/">
+                    <img src="./assets/linkedin.png" alt="Icon Linkedin">
+                    Linkedin</a>
+            </div>
+        </section>
+        
+        <img src="./assets/fotoKaua.jpg" alt="Minha foto" class="fotoPerfil">
+        
         
     </main>
 
-    <footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por Kauã Almeida Silveira</p>
     </footer>
 </body>
 </html>
