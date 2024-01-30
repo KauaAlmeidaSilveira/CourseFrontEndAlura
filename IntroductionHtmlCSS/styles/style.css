@@ -1,102 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Outfit", sans-serif;
 }
 
-body {
-    height: 100vh;
-    background-color: white;
-    color: black;
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+.background {
+    background: url('../assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 100% da altura da viewport */
+    opacity: 0.96;
+    display: flex;
+    flex-direction: column;
+    gap: 45vh;
+}
+
 .cabecalho {
-    padding: 1.5%;
-    background-color: rgb(236, 236, 236);
+    padding: 1% 15% 0 15%;
 }
 
 .cabecalho_menu {
     display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
-.cabecalho_menu_link{
-    font-size: 4vh;
-    font-family: "Krona One", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000;
-}
-
-.apresentacao{
-    padding: 8% 5%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    overflow: hidden;
 }
 
-.fotoPerfil { 
-    width: 480px;
-    height: 560px;
-}
-
-.apresentacao_conteudo{
-    width: 615px;
+.cabecalho_sub_menu {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.apresentacao_conteudo_titulo{
-    font-size: 5vh;
-    font-family: "Krona One", sans-serif;
-}
-
-.destaqueTitulo {
-    color: #2ee600;
-}
-
-.apresentacao_conteudo_texto{
-    font-size: 4vh;
-    font-family: "Montserrat", sans-serif;
-}
-
-.apresentacao_links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 41px;
 }
 
-.apresentacao_links_subtitulo{
-    font-family: "Krona One", sans-serif;
+.cabecalho_menu_link {
+    font-size: 2.5vh;
     font-weight: 400;
-    font-size: 4vh;
-}
-
-.apresentacao_links_link{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 1px solid #2ee600;
-    width: 378px;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 4vh;
-    font-weight: 600;
-    padding: 21.5px 0;
     text-decoration: none;
-    color: #000;
-    font-family: "Montserrat", sans-serif;
+    color: #DE8342;
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
 }
 
-.apresentacao_links_link:hover {
-    background-color: #272727;
+.cabecalho_menu_link::after {
+    content: "";
+    position: absolute;
+    background-color: #DE8342;
+    height: 4px;
+    border-radius: 70px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.cabecalho_menu_link:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.cabecalho_menu_link:hover::after {
+    width: 100%;
+}
+    
+.cabecalho_menu_icons {
+    display: flex;
+    gap: 3vh;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cabecalho_apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    font-size: 5vh;
+}
+
+.sobre_mim {
+    
+}
+
+.sobre_mim_texto {
+    
+}
+
+.fotoPerfil {
+    
 }
 
 .rodape{
@@ -105,5 +104,4 @@ body {
     padding: 24px;
     text-align: center;
     font-size: 3vh;
-    font-family: "Montserrat", sans-serif;
 }
